@@ -14,7 +14,7 @@ when HTTP_REQUEST {
     
     #Set request properties
     set uri_path [HTTP::uri]
-    set uri_address $BUCKET_NAME.s3.amazonaws.com
+    set uri_address $BUCKET_NAME.s3-outposts.$REGION.amazonaws.com
     set method [HTTP::method]
     
     #Calculate signing key
